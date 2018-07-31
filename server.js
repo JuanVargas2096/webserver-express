@@ -30,6 +30,10 @@ app.get('/about', (req, res) => {
     res.render('about');
 });
 
+app.get('/contacto', (req, res) => {
+    res.render('contacto')
+});
+
 
 
 app.listen(port, () => {
