@@ -31,8 +31,13 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/contacto', (req, res) => {
-    res.render('contacto')
+    res.render('contacto');
 });
+
+
+app.get('/accionistas', (req, res) => {
+    res.render('accionistas');
+})
 
 
 
