@@ -20,27 +20,31 @@ app.set('view engine', 'hbs');
 
 app.get('/personal', (req, res) => {
     res.render('personal')
+    console.log('Se creo un personal');
 });
 
 app.get('/', (req, res) => {
     res.render('home', {
         nombre: 'Juan'
     })
+    console.log('Se accedio al /');
 })
 
 app.get('/about', (req, res) => {
     res.render('about');
 
-
+    console.log('Se accedio al about');
 });
 
 app.get('/contacto', (req, res) => {
     res.render('contacto');
+    console.log('Se accedio al contacto');
 });
 
 
 app.get('/accionistas', (req, res) => {
     res.render('accionistas');
+    console.log('Se accedio a accionistas');
 })
 
 
