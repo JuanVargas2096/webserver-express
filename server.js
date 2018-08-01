@@ -18,7 +18,9 @@ app.set('view engine', 'hbs');
 
 
 
-
+app.get('/personal', (req, res) => {
+    res.render('personal')
+});
 
 app.get('/', (req, res) => {
     res.render('home', {
@@ -46,3 +48,7 @@ app.get('/accionistas', (req, res) => {
 app.listen(port, () => {
     console.log(`Escuchando peticiones en el puerto ${port}`);
 });
+
+let search = () => {
+
+}
